@@ -45,8 +45,8 @@ def addJoint(point):
 def addLink(point,point2):
     links.append(Link(point,point2))
 
-def updateLinkPos(linkNumber,point1 , point2):
-    if linkNumber == 1 :
+def updateLinkPos(linkNumber,point1 , point2 , connect = True ):
+    if linkNumber == 1 and connect == False :
         links[linkNumber - 1].updatePos(point1 , point2)
     else :
         links[linkNumber - 1].updatePos(point1 , subPoints(point2,joints[linkNumber - 1].startPos))
