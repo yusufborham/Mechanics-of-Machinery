@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+      "C:\\Python27\\lib\\site-packages"
+    ]
+  }
+  
